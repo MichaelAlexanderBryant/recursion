@@ -5,8 +5,7 @@ function mergeSort(arr) {
     let half = Math.ceil(arr.length / 2);
     let left = arr.slice(0, half);
     let right = arr.slice(half);
-    return mergeHelper(mergeSort(left), mergeSort(right))
-
+    return mergeHelper(mergeSort(left), mergeSort(right));
 };
 
 function mergeHelper(a, b) {
@@ -18,7 +17,6 @@ function mergeHelper(a, b) {
             sortedArr.push(b.shift())
         };
     };
-
     if (a.length > 0) {
         sortedArr = sortedArr.concat(a);
     } else {
