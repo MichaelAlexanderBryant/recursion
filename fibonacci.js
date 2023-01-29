@@ -15,8 +15,6 @@ function fibs(n) {
     };
 };
 
-console.log(fibs(8));
-
 // using recursion
 function fibsRec(n, arr = [0,1]) {
     if (n == 0) {
@@ -30,5 +28,3 @@ function fibsRec(n, arr = [0,1]) {
         return fibsRec(n - 1, arr.concat([newElement]))
     }
 };
-
-console.log(fibsRec(8));

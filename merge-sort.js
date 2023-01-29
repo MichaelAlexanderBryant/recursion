@@ -26,8 +26,3 @@ function mergeHelper(a, b) {
     };
     return sortedArr;
 };
-
-console.log(mergeSort([2,1,3]));
-console.log(mergeSort([2,1,1,1,3]));
-console.log(mergeSort([2,1,3,10,0,-3]));
-console.log(mergeSort([-2,1,3,0,0,0,-55, 10000]));
